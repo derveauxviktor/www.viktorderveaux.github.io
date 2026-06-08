@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap oefeningen</title>
+  </head>
+  <body>
+    <!-- Background
+  1. Maak een div met een blauwe achtergrond.
+  2. Gebruik een afbeelding als achtergrond.  
+  -->
+    <div class="p-3 mb-3 bg-primary text-white">Blauwe achtergrond</div>
+
+    <div
+      class="p-5 mb-4 text-white bg-dark"
+      style="
+        min-height: 250px;
+        background-image: url('images/backgrounds/full-bg-1.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      Achtergrondafbeelding
+    </div>
+
+    <!-- Borders
+1. Voeg een rode rand toe aan een div.
+2. Maak een afbeelding met afgeronde hoeken.      -->
+    <div class="p-3 mb-3 border border-danger">Rode rand</div>
+
+    <img
+      src="images/gallery/image-1.jpg"
+      class="img-fluid rounded mb-4"
+      alt="Afbeelding met afgeronde hoeken"
+    />
+
+    <!-- Text
+1. Maak een tekst vetgedrukt en cursief.
+2. Voeg een quote toe met de Bootstrap blockquote-stijl.   -->
+
+    <p class="fw-bold fst-italic">Deze tekst is vetgedrukt en cursief.</p>
+
+    <blockquote class="blockquote">
+      <p>Dit is een quote met de Bootstrap blockquote-stijl.</p>
+    </blockquote>
+
+    <!-- Display
+1. Verberg een div op mobiele schermen.
+2. Toon een element alleen op desktops.  -->
+    <div class="d-none d-md-block p-3 mb-3 bg-primary text-white">
+      Verborgen op mobiele schermen
+    </div>
+
+    <div class="d-none d-lg-block p-3 mb-4 bg-success text-white">
+      Alleen zichtbaar op desktops
+    </div>
+
+    <!-- Flexbox
+1. Gebruik flexbox om items naast elkaar te plaatsen.
+2. Centreer een div verticaal en horizontaal.  -->
+    <div class="d-flex gap-3 mb-4">
+      <div class="p-3 bg-primary text-white">Item 1</div>
+      <div class="p-3 bg-secondary text-white">Item 2</div>
+      <div class="p-3 bg-success text-white">Item 3</div>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center mb-4 bg-light border"
+      style="height: 200px"
+    >
+      <div class="p-3 bg-dark text-white">Gecentreerd</div>
+    </div>
+
+    <!-- Spacing
+1. Voeg extra marge toe rond een element.
+2. Pas de padding van een div aan.  -->
+    <div class="m-4 bg-primary text-white">Marge</div>
+
+    <div class="p-3 mb-4 bg-success text-white">Padding</div>
+
+    <!-- Clearfix
+1. Gebruik clearfix om float-problemen op te lossen.
+2. Laat een afbeelding links zweven met tekst ernaast.     -->
+    <div class="clearfix mb-4">
+      <img
+        src="images/foto.jpg"
+        class="float-start me-3 mb-3 img-fluid"
+        style="max-width: 200px"
+        alt="Foto links"
+      />
+      <p>
+        Deze tekst staat naast de afbeelding. De clearfix zorgt ervoor dat de
+        container netjes rond de zwevende afbeelding blijft.
+      </p>
+    </div>
+
+    <!-- Containers
+1. Gebruik een container om content te centreren.
+2. Probeer het verschil tussen `.container` en `.container-fluid`.    -->
+
+    <div class="container mb-3 bg-light border">
+      <p>Deze content staat in een gewone container.</p>
+    </div>
+
+    <div class="container-fluid mb-4 bg-light border">
+      <p>Deze content staat in een container-fluid.</p>
+    </div>
+
+    <!-- 12 Grid
+1. Maak een layout met drie kolommen.
+2. Laat een kolom de helft van de breedte innemen.  -->
+
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-3 bg-primary text-white p-3">
+          <p>Kolom 1</p>
+        </div>
+        <div class="col-6 bg-secondary text-white p-3">
+          <p>Kolom 2 (helft)</p>
+        </div>
+        <div class="col-3 bg-success text-white p-3">
+          <p>Kolom 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography
+1. Gebruik een 'display' heading.
+2. Maak een lead-paragraaf.  -->
+    <h1 class="display-1">Display heading</h1>
+
+    <p class="lead">Dit is een lead-paragraaf.</p>
+
+    <!-- Tables
+1. Maak een tabel met Bootstrap-stijlen.
+2. Voeg gestreepte rijen en hover-effecten toe.  -->
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Kolom 1</th>
+          <th scope="col">Kolom 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Inhoud</td>
+          <td>Inhoud</td>
+        </tr>
+        <tr>
+          <td>Inhoud</td>
+          <td>Inhoud</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Buttons
+1. Maak een primaire knop.
+2. Gebruik een outline-stijl voor een knop.  -->
+    <button type="button" class="btn btn-primary">Primaire knop</button>
+
+    <button type="button" class="btn btn-outline-primary">Outline knop</button>
+
+    <!-- Badge
+1. Voeg een badge toe aan een knop.
+2. Gebruik een badge om notificaties weer te geven.  -->
+    <button type="button" class="btn btn-primary">
+      Berichten <span class="badge bg-danger">4</span>
+    </button>
+
+    <!-- Alerts
+1. Maak een succes-alert.
+2. Voeg een alert toe met een sluitknop.  -->
+    <div class="alert alert-success mt-4" role="alert">Succes!</div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      Dit is een alert met een sluitknop.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Sluiten"
+      ></button>
+    </div>
+
+    <!-- Images
+1. Maak een responsieve afbeelding.
+2. Voeg afgeronde hoeken toe aan een afbeelding.  -->
+    <img
+      src="images/foto.jpg"
+      class="img-fluid rounded mb-4"
+      alt="Responsieve afbeelding"
+    />
+
+    <!-- Modal
+1. Maak een knop die een modal opent.
+2. Voeg een titel en bodytekst toe aan de modal.  -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#mijnModal"
+    >
+      Open modal
+    </button>
+
+    <div class="modal fade" id="mijnModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Titel</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Sluiten"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Dit is de bodytekst van de modal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar
+1. Maak een eenvoudige navigatiebalk.
+2. Voeg een menu toe dat inklapt op kleine schermen.      -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Navigatie openen"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Over</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Forms
+1. Maak een formulier met een e-mailveld en een verzendknop.
+2. Voeg een label en placeholder toe aan een inputveld.  -->
+    <form class="mt-4">
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mailadres</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="naam@voorbeeld.com"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Verzenden</button>
+    </form>
+
+    <!-- Card
+1. Maak een kaart met een afbeelding en titel.
+2. Voeg een beschrijving en knop toe aan de kaart.  -->
+    <div class="card mt-4" style="width: 18rem">
+      <img src="images/foto.jpg" class="card-img-top" alt="Kaartafbeelding" />
+      <div class="card-body">
+        <h5 class="card-title">Titel</h5>
+        <p class="card-text">Beschrijving van de kaart.</p>
+        <a href="#" class="btn btn-primary">Knop</a>
+      </div>
+    </div>
+
+    <!-- Progress
+1. Maak een voortgangsbalk met 50% vulling.
+2. Geef de balk een groene kleur.  -->
+    <div class="progress mt-4" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 50%">50%</div>
+    </div>
+
+    <!-- List Group
+1. Maak een genummerde lijst.
+2. Voeg een actieve lijst-item toe.  -->
+    <ol class="list-group list-group-numbered mt-4">
+      <li class="list-group-item active" aria-current="true">Actief item</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+    </ol>
+
+    <!-- Pagination
+1. Maak een paginering met 'Vorige' en 'Volgende'.
+2. Maak de eerste pagina actief. -->
+    <nav class="mt-4" aria-label="Paginering">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Vorige</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Volgende</a></li>
+      </ul>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

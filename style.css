@@ -1,0 +1,60 @@
+/* Standaard instellingen voor de pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* De navigatiebalk bovenaan */
+.navbar {
+    background-color: #1f4e79;
+}
+
+/* De grote home-sectie met de foto */
+.hero-section {
+    /* Donkerblauwe achtergrondkleur als opvang mocht de foto niet laden */
+    background-color: #1f4e79; 
+    
+    /* De juiste koppeling naar jouw afbeelding */
+    background-image: url('full-bg-8.jpg'); 
+    
+    background-size: cover;
+    background-position: center 30%; /* Verschuift de foto een klein beetje omhoog */
+    color: white;
+    text-align: center;
+    
+    /* Zorgt dat de sectie exact het hele scherm vult tussen de navbar en footer */
+    min-height: calc(100vh - 56px - 54px); 
+    
+    /* Zorgt dat de tekst ("Welkom op mijn portfolio") netjes in het midden staat */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Instellingen voor de overige pagina's (over mij, projecten, etc.) */
+.page-section {
+    padding: 60px 0;
+}
+
+/* Profielfoto op de over mij pagina */
+.profile-img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Kaartjes op de projectenpagina */
+.project-card {
+    border: 1px solid #ddd;
+}
+
+/* De balk helemaal onderaan de pagina */
+.footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 0; /* Op 0 gezet zodat er geen witruimte onder kan ontstaan */
+}
